@@ -1,0 +1,4 @@
+
+public interface DisplayElement {
+	public void display(int h, int e, int d, int m);
+}

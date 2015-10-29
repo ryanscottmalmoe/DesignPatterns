@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class BadGuy implements Observer, DisplayElement{
+
+	Observable eye;
+	String name;
+	public BadGuy(Observable data, String name)
+	{
+		this.eye = data;
+		this.name = name;
+	}
+	public void update(int h, int e, int d, int m)
+	{
+		display();
+	}
+	public void defeated()
+	{
+		
+	}
+	
+	public void display()
+	{
+		System.out.println("Current guys spotted: ");
+	}
+}

@@ -1,0 +1,17 @@
+
+public class BadGuy implements Observer, DisplayElement{
+
+	public BadGuy(EyeOfSauron data, String name)
+	{
+		
+	}
+	public void update(int h, int e, int d, int m)
+	{
+		display();
+	}
+	
+	public void display()
+	{
+		System.out.println("Current guys spotted: ");
+	}
+}

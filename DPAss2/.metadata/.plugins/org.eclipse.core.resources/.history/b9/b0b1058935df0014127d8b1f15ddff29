@@ -1,0 +1,16 @@
+
+public class GoodGuys {
+	private int hobbits;
+	private int elves;
+	private int dwarves;
+	private int men;
+	
+	public GoodGuys(int h, int e, int d, int m)
+	{
+		this.hobbits = h;
+		this.elves = e;
+		this.dwarves = d;
+		this.men = m;
+	}
+	
+}

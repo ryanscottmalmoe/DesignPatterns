@@ -1,0 +1,16 @@
+#import java.util.*;
+
+public class EyeOfSauron implements Subject {
+	
+	private ArrayList observers;
+	private int hobbits;
+	private int elves;
+	private int dwarves;
+	private int men;
+	
+	public EyeOfSauron
+	{
+		observers = new ArrayList();
+	}
+	
+}

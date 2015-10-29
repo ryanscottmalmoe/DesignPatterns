@@ -1,0 +1,13 @@
+
+public abstract class Tree {
+	
+	String description = "unknown tree";
+	//BOOL hasStar = 
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public abstract int cost();
+}

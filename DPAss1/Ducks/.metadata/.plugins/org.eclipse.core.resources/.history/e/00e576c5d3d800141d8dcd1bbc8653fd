@@ -1,0 +1,12 @@
+
+public class GameCharacterSlash extends GameCharacter {
+
+	public GameCharacterSlash() {
+		guitarBehavior = new GibsonSG();
+		soloBehavior = new GuitarOnFire());
+	}
+	
+	public void display() {
+		System.out.println("I'm Slash");
+	}
+}

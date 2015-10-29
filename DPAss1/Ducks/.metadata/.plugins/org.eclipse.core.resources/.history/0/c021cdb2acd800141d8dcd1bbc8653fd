@@ -1,0 +1,5 @@
+public class GuitarOnFire implements SoloBehavior {
+	public void playSolo() {
+		System.out.println("I'm liting my guitar on fire.");
+	}
+}

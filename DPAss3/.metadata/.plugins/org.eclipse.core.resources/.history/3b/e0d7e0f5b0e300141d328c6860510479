@@ -1,0 +1,17 @@
+
+public abstract class Tree {
+	
+	String description = "unknown tree";
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	public void printtree()
+	{
+		System.out.println(this.getDescription() + " costs $" + this.getCost();;
+		
+	}
+	
+	public abstract int cost();
+}

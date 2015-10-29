@@ -1,0 +1,12 @@
+
+public class GameCharacterHendrix extends GameCharacter {
+
+	public GameCharacterHendrix() {
+		//guitarBehavior = new Quack();
+		//soloBehavior = new FlyWithWings();
+	}
+	
+	public void display() {
+		System.out.println("I'm a real Mallard duck");
+	}
+}

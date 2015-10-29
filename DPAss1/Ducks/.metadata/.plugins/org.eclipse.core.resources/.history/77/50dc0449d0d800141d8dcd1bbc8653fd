@@ -1,0 +1,5 @@
+public class FenderTelecaster implements GuitarBehavior {
+	public void playGuitar() {
+		System.out.println("I'm playing a Fender Telecaster.");
+	}
+}

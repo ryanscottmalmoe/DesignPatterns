@@ -1,0 +1,4 @@
+
+public interface Observer {
+	public void update(int h, int e, int d, in m);// hobbits, elves, dwarves, men
+}

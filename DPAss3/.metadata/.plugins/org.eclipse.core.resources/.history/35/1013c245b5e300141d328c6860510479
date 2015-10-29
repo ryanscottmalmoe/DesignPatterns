@@ -1,0 +1,36 @@
+
+public class TreeTester {
+
+	public static void main(String[] args) {
+		
+		Tree mytree = new BlueSpruce();
+		mytree = getStar(mytree);
+		mytree = new Ruffles(mytree);
+		mytree = getStar(mytree);
+		mytree = new Ruffles(mytree);
+		Tree mySecondTree = new DouglasFir();
+		mySecondTree = getStar(mySecondTree);
+		mySecondTree = new BallsBlue(mySecondTree);
+		mySecondTree = new BallsSilver(mySecondTree);
+		printtree(mytree);
+		printtree(mySecondTree);
+	}
+	
+	public static void printtree(Tree tree)
+	{
+		System.out.println(tree.getDescription() + " costs $" + tree.cost() + ".00");
+	}
+	public static Tree getStar(Tree tree)
+	{
+		if(tree.getDescription().contains("a Star"))
+		{
+			System.out.println("Tree already has a star!");
+			return tree;
+		}
+		else
+		{
+			tree = new Star(tree);
+			return tree;
+		}
+	}
+}

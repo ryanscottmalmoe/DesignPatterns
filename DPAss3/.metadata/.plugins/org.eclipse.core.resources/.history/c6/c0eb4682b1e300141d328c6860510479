@@ -1,0 +1,19 @@
+
+public class Star extends TreeDecorations{
+	Tree tree;
+	public Star(Tree tree)
+	{
+		if(!tree.getDescription().contains("a Star"))
+		{
+			this.tree = tree;
+		}
+	}
+	public String getDescription()
+	{
+		return tree.getDescription() + ", a Star";
+	}
+	public int cost()
+	{
+		return 4 + tree.cost();
+	}
+}

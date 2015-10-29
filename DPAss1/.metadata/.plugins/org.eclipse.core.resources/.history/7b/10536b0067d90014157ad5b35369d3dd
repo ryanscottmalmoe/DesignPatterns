@@ -1,0 +1,11 @@
+public class GameCharacterYoung extends GameCharacter {
+
+	public GameCharacterYoung() {
+		guitarBehavior = new GibsonFlyingV();
+		soloBehavior = new SmashTheGuitar();
+	}
+	
+	public void display() {
+		System.out.println("I'm Angus Young");
+	}
+}

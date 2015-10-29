@@ -1,0 +1,7 @@
+
+public class BlueSpruce extends Tree{
+	public BlueSpruce()
+	{
+		description = "Colorado Blue Spruce";
+	}
+}

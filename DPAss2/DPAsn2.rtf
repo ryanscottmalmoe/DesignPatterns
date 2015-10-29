@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;}
+\margl1440\margr1440\vieww16340\viewh12180\viewkind0
+\deftab720
+\pard\pardeftab720\sl400
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 As with assignment 1, develop a simple set of Java/C# classes using the Observer pattern to represent the following scenario:\
+\
+In the land of Middle Earth battle wages between good and bad. \'a0On the side of 'good' are Hobbits, Elves, Dwarves, and Men. \'a0On the side of 'bad' are the wizard Saruman and the Witch King of Angmar (leader of the Nazgul). \'a0The ever watching Eye of Sauron is always on the lookout for the agents of 'good'. \'a0Saruman and the Witch King would like to be notified any time the Eye of Sauron spots one of the good guys.\
+\
+Use the Observer pattern to model the above. \'a0Utilize Java's Observer interface and Observable class as part of your implementation. \'a0If you use C#, utilize the .NET counterparts (IObservable and IObserver). \'a0Use the tester class given below as a starting point for your design (you may add more to the tester as necessary based on your solution to this problem). \'a0Follow the Weather Data example from HFDP to aid you in your task. \'a0Turn in a zip that contains your source files and a UML representation (.pdf required) of the classes and interfaces in your design.\
+\
+public class\'a0TestSauronEye \{\
+\'a0\'a0\'a0\'a0public static void\'a0main(String[] args) \{\
+\
+\'a0\'a0\'a0 \'a0\'a0\'a0 EyeOfSauron eye =\'a0new\'a0EyeOfSauron();\
+\'a0\'a0\'a0 \'a0\'a0\'a0 BadGuy saruman =\'a0new\'a0BadGuy(eye, "Saruman");\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 BadGuy\'a0witchKing=\'a0new\'a0BadGuy(eye, "Witch King");\
+\'a0\'a0\'a0 \'a0\'a0\'a0 eye.setEnemies(1, 1, 2, 0); //hobbits, elves, dwarves, men -- BTW, this is HORRIBLE coding style\
+\'a0\'a0\'a0 \'a0\'a0\'a0\'a0//message should be displayed from Saruman and Angmar that they know about 1 hobbit, 1 elf, 2 dwarves\
+\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'a0\'a0\'a0 \'a0\'a0\'a0 saruman.defeated(); //Saruman is no longer registered with the Eye\
+\'a0\'a0\'a0 \'a0\'a0\'a0 eye.setEnemies(4, 2, 2, 100);\
+\'a0\'a0\'a0 \'a0\'a0\'a0\'a0//only the Witch King reports on the enemies\
+\
+\'a0\'a0\'a0 \}//end main\
+\}//end class}

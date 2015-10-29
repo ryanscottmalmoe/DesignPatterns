@@ -1,0 +1,12 @@
+
+public class GameCharacterHendrix extends GameCharacter {
+
+	public GameCharacterHendrix() {
+		guitarBehavior = new Guitar();
+		soloBehavior = new Solo();
+	}
+	
+	public void display() {
+		System.out.println("I'm Jimi Hendrix");
+	}
+}

@@ -1,0 +1,34 @@
+
+public abstract class GameCharacter {
+
+	GuitarBehavior guitarBehavior;
+	SoloBehavior soloBehavior;
+	public GameCharacter() {
+	}
+	
+	public abstract void display();
+	
+	public void playSolo() {
+		soloBehavior.Solo();
+	}
+	
+	public void playGuitar() {
+		guitarBehavior.Guitar();
+	}
+	
+	public void swim() {
+		System.out.println("All ducks float, even decoys!");
+	}
+	
+	public void setFlyBehavior(FlyBehavior fb) {
+		flyBehavior = fb;
+	}
+	public void setGuitarBehavior(GuitarBehavior gb) {
+		flyBehavior = gb;
+	}
+	
+	public void setSoloBehavior(SoloBehavior sb) {
+		quackBehavior = sb;
+	}
+	
+}

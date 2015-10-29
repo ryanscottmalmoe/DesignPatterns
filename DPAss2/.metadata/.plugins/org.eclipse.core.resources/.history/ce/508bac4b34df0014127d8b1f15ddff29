@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class BadGuy implements Observer, DisplayElement{
+
+	EyeOfSauron eye;
+	String name;
+	public BadGuy(EyeOfSauron eye, String name)
+	{
+		this.eye = eye;
+		this.name = name;
+		eye.registerObserver(this);
+	}
+	public void update(int h, int e, int d, int m)
+	{
+		display(h, e, d, m);
+	}
+	public void defeated()
+	{
+		eye.removeObserver(this);
+	}
+	
+	public void display(int h, int e, int d, int m)
+	{
+		System.out.println("Notifying : " + name + " of " + h + " hobbit(s), " + e + " elve(s) " + d + " dwarves " +  e + " men");       
+	}
+}

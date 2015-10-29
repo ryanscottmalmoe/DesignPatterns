@@ -1,0 +1,17 @@
+public class TestSauronEye 
+{
+	public static void main(String[] args) 
+	{
+		
+				EyeOfSauron eye = new EyeOfSauron();
+				BadGuy saruman = new BadGuy(eye, "Saruman");
+				BadGuy witchKing = new BadGuy(eye, "Witch King");
+				GoodGuys goodGuyGroup1 = new GoodGuys(1, 1, 2, 0);
+				GoodGuys goodGuyGroup2 = new GoodGuys(4, 2, 2, 100);
+
+				eye.setEnemies(1, 1, 2, 0);
+				saruman.defeated();
+				eye.setEnemies(4, 2, 2, 100);
+	}//end main
+
+}//end class

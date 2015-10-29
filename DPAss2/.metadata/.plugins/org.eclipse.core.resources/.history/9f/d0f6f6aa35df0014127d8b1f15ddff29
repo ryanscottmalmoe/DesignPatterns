@@ -1,0 +1,31 @@
+
+public class GoodGuys {
+	private int hobbits;
+	private int elves;
+	private int dwarves;
+	private int men;
+	
+	public GoodGuys(int h, int e, int d, int m)
+	{
+		this.setHobbits(h);
+		this.elves = e;
+		this.dwarves = d;
+		this.men = m;
+	}
+	
+	public void setEnemies(int h, int e, int d, int m)
+	{
+		this.setHobbits(h);
+		this.elves = e;
+		this.dwarves = d;
+		this.men = m;
+	}
+
+	public int getHobbits() {
+		return hobbits;
+	}
+
+	public void setHobbits(int hobbits) {
+		this.hobbits = hobbits;
+	}
+}

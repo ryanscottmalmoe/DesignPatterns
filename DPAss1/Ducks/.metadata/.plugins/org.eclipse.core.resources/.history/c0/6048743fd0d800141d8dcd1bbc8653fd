@@ -1,0 +1,6 @@
+
+public class GibsonSG implements GuitarBehavior {
+	public void playGuitar() {
+		System.out.println("I'm playing a Gibson SG.");
+	}
+}

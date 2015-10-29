@@ -1,0 +1,14 @@
+
+public class TreeTester {
+
+	public static void main(String[] args) {
+		
+		Tree mytree = new BlueSpruce();
+		mytree = new Star(mytree);
+		mytree = new Ruffles(mytree);
+		mytree = new Star(mytree); //this is problematic!
+		mytree = new Ruffles(mytree);
+		//mytree.getDescription();
+		//Need to make the star class only allow 1 star per tree;
+	}
+}

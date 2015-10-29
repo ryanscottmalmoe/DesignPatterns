@@ -1,0 +1,12 @@
+
+public class GameCharacterSlash extends GameCharacter {
+
+	public GameCharacterSlash() {
+		guitarBehavior = new Quack();
+		soloBehavior = new FlyWithWings();
+	}
+	
+	public void display() {
+		System.out.println("I'm a real Mallard duck");
+	}
+}

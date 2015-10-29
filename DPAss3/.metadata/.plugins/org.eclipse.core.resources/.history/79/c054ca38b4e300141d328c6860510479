@@ -1,0 +1,32 @@
+
+public class TreeTester {
+
+	public static void main(String[] args) {
+		
+		Tree mytree = new BlueSpruce();
+		mytree = getStar(mytree);
+		mytree = new Ruffles(mytree);
+		mytree = getStar(mytree);
+		mytree = new Ruffles(mytree);
+		printtree(mytree);
+		//Need to make the star class only allow 1 star per tree;
+	}
+	
+	public static void printtree(Tree tree)
+	{
+		System.out.println(tree.getDescription() + " costs $" + tree.cost() + ".00");
+	}
+	public static Tree getStar(Tree tree)
+	{
+		if(tree.hasStar)
+		{
+			System.out.println("Tree already has a star!");
+			return tree;
+		}
+		else
+		{
+			tree = new star(tree);
+			return tree;
+		}
+	}
+}

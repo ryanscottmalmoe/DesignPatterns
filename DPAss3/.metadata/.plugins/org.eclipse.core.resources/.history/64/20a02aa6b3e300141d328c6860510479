@@ -1,0 +1,12 @@
+
+public abstract class Tree {
+	
+	String description = "unknown tree";
+	Boolean hasTree = false;
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public abstract int cost();
+}
